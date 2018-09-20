@@ -1,0 +1,28 @@
+import Vue from 'vue'
+import Router from 'vue-router'
+import Profile from '@/components/Profile'
+import Dashboard from '@/components/Dashboard'
+
+Vue.use(Router)
+
+export default new Router({
+  mode : 'history',
+  routes: [
+  	{	
+      path: '/',
+      name: 'Dashboard',
+      component: Dashboard
+    },
+    {
+      path: '/admin/Dashboard',
+      name: 'Dashboard',
+      component: Dashboard
+    },
+    {
+      path: '/admin/Profile',
+      name: 'Profile',
+      component: Profile
+    }
+
+  ]
+})
