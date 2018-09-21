@@ -2,9 +2,8 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Profile from '@/components/Profile'
 import Dashboard from '@/components/Dashboard'
-import Pelayanan from '@/components/Pelayanan'
+import Layanan from '@/components/Layanan'
 import NotFoundView from '@/components/NotFoundView'
-import { dirname } from 'path';
 
 Vue.use(Router)
 
@@ -29,9 +28,9 @@ export default new Router({
       component: Profile
     },
     {
-      path: '/admin/Pelayanan',
-      name: 'Pelayanan',
-      component: Pelayanan
+      path: '/admin/Layanan',
+      name: 'Layanan',
+      component: Layanan
     },
     {
       path: '/*',

@@ -24,6 +24,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>src/assets/css/app.css">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>src/assets/css/core/menu/menu-types/vertical-menu.css">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>src/assets/css/core/colors/palette-gradient.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>src/assets/vendors/css/tables/datatable/datatables.min.css">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>src/assets/css/style.css">
     <!-- END CSS-->
 
@@ -45,5 +46,7 @@ wow = new WOW({}).init();
 <script src="<?php echo base_url(); ?>src/assets/js/core/app-menu.js" type="text/javascript"></script>
 <script src="<?php echo base_url(); ?>src/assets/js/core/app.js" type="text/javascript"></script>
 <script src="<?php echo base_url(); ?>src/assets/js/scripts/customizer.js" type="text/javascript"></script>
+<script src="<?php echo base_url(); ?>src/assets/vendors/js/tables/datatable/datatables.min.js" type="text/javascript"></script>
+
 </body>
 </html>
