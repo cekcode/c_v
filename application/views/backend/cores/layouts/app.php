@@ -39,6 +39,9 @@ data-open="click" data-menu="vertical-menu" data-col="2-columns">
 
 <script>
 wow = new WOW({}).init();
+$(document).ready(function() {
+    $('.dt-config').DataTable();
+});
 </script>
 
 

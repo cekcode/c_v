@@ -98,7 +98,7 @@
 
 <script>
   export default {
-    mounted() {
+    mounted: function() {
       $(this.$refs.dtconfig).DataTable()
     }
   }
