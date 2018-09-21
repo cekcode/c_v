@@ -108,6 +108,7 @@ module.exports = {
     overlay: true,
     contentBase: false,
     hot: true,
+    historyApiFallback: true,
     headers: {
       'Access-Control-Allow-Origin': '*'
     }
