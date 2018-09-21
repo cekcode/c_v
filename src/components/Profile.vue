@@ -1,120 +1,165 @@
 <template>
-<div class="app-content content">
+  <div class="app-content content">
     <div class="content-wrapper">
-        <div class="content-header row">
-        </div>
-        <div class="content-body">
-
-            <!-- Active Orders -->
-            <div class="row">
-                <div class="col-12">
-                <div class="card">
-                    <div class="card-header">
-                    <h4 class="card-title">Profile</h4>
-                    <a class="heading-elements-toggle"><i class="la la-ellipsis-v font-medium-3"></i></a>
-                    <div class="heading-elements">
-                        <td>
-                        <button class="btn btn-sm round btn-danger btn-glow"><i class="la la-close font-medium-1"></i> Cancel all</button>
-                        </td>
-                    </div>
-                    </div>
-                    <div class="card-content">
-                    <div class="table-responsive">
-                        <table class="table table-de mb-0">
-                        <thead>
-                            <tr>
-                            <th>Date</th>
-                            <th>Type</th>
-                            <th>Amount BTC</th>
-                            <th>BTC Remaining</th>
-                            <th>Price</th>
-                            <th>USD</th>
-                            <th>Fee (%)</th>
-                            <th>Cancel</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                            <td>2018-01-31 06:51:51</td>
-                            <td class="success">Buy</td>
-                            <td><i class="cc BTC-alt"></i> 0.58647</td>
-                            <td><i class="cc BTC-alt"></i> 0.58647</td>
-                            <td>11900.12</td>
-                            <td>$ 6979.78</td>
-                            <td>0.2</td>
-                            <td>
-                                <button class="btn btn-sm round btn-outline-danger"> Cancel</button>
-                            </td>
-                            </tr>
-                            <tr>
-                            <td>2018-01-31 06:50:50</td>
-                            <td class="danger">Sell</td>
-                            <td><i class="cc BTC-alt"></i> 1.38647</td>
-                            <td><i class="cc BTC-alt"></i> 0.38647</td>
-                            <td>11905.09</td>
-                            <td>$ 4600.97</td>
-                            <td>0.2</td>
-                            <td>
-                                <button class="btn btn-sm round btn-outline-danger"> Cancel</button>
-                            </td>
-                            </tr>
-                            <tr>
-                            <td>2018-01-31 06:49:51</td>
-                            <td class="success">Buy</td>
-                            <td><i class="cc BTC-alt"></i> 0.45879</td>
-                            <td><i class="cc BTC-alt"></i> 0.45879</td>
-                            <td>11901.85</td>
-                            <td>$ 5460.44</td>
-                            <td>0.2</td>
-                            <td>
-                                <button class="btn btn-sm round btn-outline-danger"> Cancel</button>
-                            </td>
-                            </tr>
-                            <tr>
-                            <td>2018-01-31 06:51:51</td>
-                            <td class="success">Buy</td>
-                            <td><i class="cc BTC-alt"></i> 0.89877</td>
-                            <td><i class="cc BTC-alt"></i> 0.89877</td>
-                            <td>11899.25</td>
-                            <td>$ 10694.6</td>
-                            <td>0.2</td>
-                            <td>
-                                <button class="btn btn-sm round btn-outline-danger"> Cancel</button>
-                            </td>
-                            </tr>
-                            <tr>
-                            <td>2018-01-31 06:51:51</td>
-                            <td class="danger">Sell</td>
-                            <td><i class="cc BTC-alt"></i> 0.45712</td>
-                            <td><i class="cc BTC-alt"></i> 0.45712</td>
-                            <td>11908.58</td>
-                            <td>$ 5443.65</td>
-                            <td>0.2</td>
-                            <td>
-                                <button class="btn btn-sm round btn-outline-danger"> Cancel</button>
-                            </td>
-                            </tr>
-                            <tr>
-                            <td>2018-01-31 06:51:51</td>
-                            <td class="success">Buy</td>
-                            <td><i class="cc BTC-alt"></i> 0.58647</td>
-                            <td><i class="cc BTC-alt"></i> 0.58647</td>
-                            <td>11900.12</td>
-                            <td>$ 6979.78</td>
-                            <td>0.2</td>
-                            <td>
-                                <button class="btn btn-sm round btn-outline-danger"> Cancel</button>
-                            </td>
-                            </tr>
-                        </tbody>
-                        </table>
-                    </div>
-                    </div>
-                </div>
-                </div>
+      <div class="content-header row">
+        <div class="content-header-left col-md-6 col-12 mb-2">
+          <h3 class="content-header-title">Profile</h3>
+          <div class="row breadcrumbs-top">
+            <div class="breadcrumb-wrapper col-12">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Profile</a>
+                </li>
+                <li class="breadcrumb-item active">Semua Profile
+                </li>
+              </ol>
             </div>
-            <!-- Active Orders -->
+          </div>
         </div>
+      </div>
+      <div class="content-body">
+
+        <section id="html">
+          <div class="row">
+            <div class="col-12">
+              <div class="card">
+                <div class="card-header">
+                  <h4 class="card-title">Sejarah</h4>
+                  <a class="heading-elements-toggle"><i class="la la-ellipsis-v font-medium-3"></i></a>
+                  <div class="heading-elements">
+                    <ul class="list-inline mb-0">
+                      <li><a data-action="collapse"><i class="ft-minus"></i></a></li>
+                      <li><a data-action="reload"><i class="ft-rotate-cw"></i></a></li>
+                      <li><a data-action="expand"><i class="ft-maximize"></i></a></li>
+                      <li><a data-action="close"><i class="ft-x"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="card-content collpase show">
+                  <div class="card-body card-dashboard">
+                    <p class="card-text">The foundation for DataTables is progressive enhancement, so
+                      it is very adept at reading table information directly from
+                      the DOM. This example shows how easy it is to add searching,
+                      ordering and paging to your HTML table by simply running DataTables
+                      on it.
+                    </p>
+                  </div>
+                </div>
+                <div align="center">
+                    <button type="button" class="btn btn-warning round btn-min-width mr-1 mb-1">Edit</button>
+                    <button type="button" class="btn btn-danger round btn-min-width mr-1 mb-1">Hapus</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="html">
+          <div class="row">
+            <div class="col-12">
+              <div class="card">
+                <div class="card-header">
+                  <h4 class="card-title">Visi dan Misi</h4>
+                  <a class="heading-elements-toggle"><i class="la la-ellipsis-v font-medium-3"></i></a>
+                  <div class="heading-elements">
+                    <ul class="list-inline mb-0">
+                      <li><a data-action="collapse"><i class="ft-minus"></i></a></li>
+                      <li><a data-action="reload"><i class="ft-rotate-cw"></i></a></li>
+                      <li><a data-action="expand"><i class="ft-maximize"></i></a></li>
+                      <li><a data-action="close"><i class="ft-x"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="card-content collpase show">
+                  <div class="card-body card-dashboard">
+                    <p class="card-text">The foundation for DataTables is progressive enhancement, so
+                      it is very adept at reading table information directly from
+                      the DOM. This example shows how easy it is to add searching,
+                      ordering and paging to your HTML table by simply running DataTables
+                      on it.
+                    </p>
+                  </div>
+                </div>
+                <div align="center">
+                    <button type="button" class="btn btn-warning round btn-min-width mr-1 mb-1">Edit</button>
+                    <button type="button" class="btn btn-danger round btn-min-width mr-1 mb-1">Hapus</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="html">
+          <div class="row">
+            <div class="col-12">
+              <div class="card">
+                <div class="card-header">
+                  <h4 class="card-title">Arti Logo</h4>
+                  <a class="heading-elements-toggle"><i class="la la-ellipsis-v font-medium-3"></i></a>
+                  <div class="heading-elements">
+                    <ul class="list-inline mb-0">
+                      <li><a data-action="collapse"><i class="ft-minus"></i></a></li>
+                      <li><a data-action="reload"><i class="ft-rotate-cw"></i></a></li>
+                      <li><a data-action="expand"><i class="ft-maximize"></i></a></li>
+                      <li><a data-action="close"><i class="ft-x"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="card-content collpase show">
+                  <div class="card-body card-dashboard">
+                    <p class="card-text">The foundation for DataTables is progressive enhancement, so
+                      it is very adept at reading table information directly from
+                      the DOM. This example shows how easy it is to add searching,
+                      ordering and paging to your HTML table by simply running DataTables
+                      on it.
+                    </p>
+                  </div>
+                </div>
+                <div align="center">
+                    <button type="button" class="btn btn-warning round btn-min-width mr-1 mb-1">Edit</button>
+                    <button type="button" class="btn btn-danger round btn-min-width mr-1 mb-1">Hapus</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <section id="html">
+          <div class="row">
+            <div class="col-12">
+              <div class="card">
+                <div class="card-header">
+                  <h4 class="card-title">Informasi Umum</h4>
+                  <a class="heading-elements-toggle"><i class="la la-ellipsis-v font-medium-3"></i></a>
+                  <div class="heading-elements">
+                    <ul class="list-inline mb-0">
+                      <li><a data-action="collapse"><i class="ft-minus"></i></a></li>
+                      <li><a data-action="reload"><i class="ft-rotate-cw"></i></a></li>
+                      <li><a data-action="expand"><i class="ft-maximize"></i></a></li>
+                      <li><a data-action="close"><i class="ft-x"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="card-content collpase show">
+                  <div class="card-body card-dashboard">
+                    <p class="card-text">The foundation for DataTables is progressive enhancement, so
+                      it is very adept at reading table information directly from
+                      the DOM. This example shows how easy it is to add searching,
+                      ordering and paging to your HTML table by simply running DataTables
+                      on it.
+                    </p>
+                  </div>
+                </div>
+                <div align="center">
+                    <button type="button" class="btn btn-warning round btn-min-width mr-1 mb-1">Edit</button>
+                    <button type="button" class="btn btn-danger round btn-min-width mr-1 mb-1">Hapus</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
     </div>
-</div>
+  </div>
+
 </template>

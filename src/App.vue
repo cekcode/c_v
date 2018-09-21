@@ -1,5 +1,29 @@
 <template>
   <div id="app">
+    <nav class="header-navbar navbar-expand-md navbar navbar-with-menu navbar-without-dd-arrow fixed-top navbar-dark navbar-shadow navbar-brand-center">
+        <div class="navbar-wrapper">
+        <div class="navbar-header">
+            <ul class="nav navbar-nav flex-row">
+            <li class="nav-item mobile-menu d-md-none mr-auto"><a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i class="ft-menu font-large-1"></i></a></li>
+            <li class="nav-item">
+                <a class="navbar-brand" href="/c_v">
+                <!-- <img class="brand-logo" alt="modern admin logo" :src="require('@/assets/images/logo/logo.png')"> -->
+                <h3 class="brand-text">RS BRAYAT MINULYA</h3>
+                </a>
+            </li>
+            </ul>
+        </div>
+        <div class="navbar-container content">
+            <div class="collapse navbar-collapse" id="navbar-mobile">
+            <ul class="nav navbar-nav mr-auto float-left">
+                <li class="nav-item d-none d-md-block"><a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i class="ft-menu"></i></a></li>
+                <li class="nav-item d-none d-md-block"><a class="nav-link nav-link-expand" href="#"><i class="ficon ft-maximize"></i></a></li>
+            </ul>
+            </div>
+        </div>
+        </div>
+    </nav>
+
     <div class="main-menu menu-fixed menu-light menu-accordion    menu-shadow " data-scroll-to-active="true">
       <div class="main-menu-content">
         <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation"> 
@@ -43,7 +67,7 @@
           </li>
           <li class="nav-item"><a href="#"><i class="la la-ambulance"></i><span class="menu-title" data-i18n="nav.templates.main">Pelayanan</span></a>
             <ul class="menu-content">
-              <li><a class="menu-item" href="/user/users/all-user" data-i18n="nav.navbars.nav_light">All Pelayanan Medik</a>
+              <li><router-link class="menu-item" data-i18n="nav.navbars.nav_light" to="/admin/Pelayanan"><i class="la la-ambulance"></i><span class="menu-title" data-i18n="nav.navbars.main">All Pelayanan</span></router-link>
               </li>
             </ul>
           </li>
@@ -113,7 +137,13 @@
       </div>
     </div>
     <router-view/>
+
+    <footer class="footer footer-static footer-dark navbar-border navbar-shadow">
+    <p class="clearfix blue-grey lighten-2 text-sm-center mb-0 px-2"><span class="float-md-left d-block d-md-inline-block">Copyright &copy; 2018 <a class="text-bold-800 grey darken-2" href="http://rsbrayatminulya.com/"
+        target="_blank">RS BRAYAT MINULYA SURAKARTA </a>, All rights reserved. </span><span class="float-md-right d-block d-md-inline-blockd-none d-lg-block">STIMIK SINUS SURAKARTA</span></p>
+    </footer>
   </div>
+
 </template>
 
 <script>

@@ -25,8 +25,15 @@ module.exports = {
         loader: 'vue-loader',
         options: {
           loaders: {
-          }
-          // other vue-loader options go here
+              // https://vue-loader.vuejs.org/guide/scoped-css.html#mixing-local-and-global-styles
+              css: ['vue-style-loader', {
+                loader: 'css-loader',
+            }],
+            js: [
+                'babel-loader',
+            ],
+          },
+          cacheBusting: true,
         }
       },
       {
@@ -88,7 +95,7 @@ module.exports = {
         {
             host: 'localhost',
             port: 3000,
-            proxy: 'http://localhost:8080/ci_vue_latihan/'
+            proxy: 'http://localhost/c_v/'
         },
         {
             reload: false
